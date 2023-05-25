@@ -1,0 +1,419 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.border {
+    border: solid;
+}
+
+/* Loading Screen */
+
+.loader {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #1D9BF0;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Akhir Loading Screen */
+
+/* Navigation Bar */
+
+nav {
+    height: max-content;
+    border-right: 1.2px solid #BBBBBB;
+    width: 28vw;
+}
+
+/* Anchor */
+
+.sidebar_menu a {
+    text-decoration: none;
+    display: table;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #ffffff;
+    color: #4d4d4d;
+}
+
+.sub_menu a {
+    text-decoration: none;
+    display: table;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #ffffff;
+    color: #4d4d4d;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: linear-gradient(to right, #88CFFF, #FFFFFF, #FFFFFF);
+    background-size: 200% auto;
+    animation: gradient 0.25s linear forwards;
+    color: #1D9BF0;
+    cursor: pointer;
+}
+
+a:active {
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+/* Akhir Anchor */
+
+.logo_tweet{
+    width: 98px; 
+    height: 79.63px;
+}
+
+.nav_logo {
+    width: max-content;
+    margin: 30px auto 30px auto;
+    color: #1D9BF0;
+    cursor: pointer;
+}
+
+.nav_logo h1 {
+    padding-left: 15px;
+}
+
+.page_nav_logo {
+    margin-right: 15px;
+    width: 27px;
+    height: 27px;
+}
+
+.sidebar_menu {
+    border-bottom: 1.2px solid #BBBBBB;
+}
+
+.sidebar_menu p {
+    width: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home_page {
+    display: flex;
+    margin-left: 15px;
+}
+
+.guide {
+    background-color: #1D9BF0;
+    width: 11px;
+    height: 22px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.sub_menu {
+    text-align: center;
+    border-bottom: 1px solid #BBBBBB;
+    font-size: small;
+}
+
+.sub_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sub_guide {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1D9BF0;
+    border-radius: 50%;
+    margin: auto 0px auto 0px;
+    left: 20%;
+    top: 20%;
+}
+
+/* Akhir Navigation Bar */
+
+.flexx{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.flexx_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexx_col input{
+    width: 100px;
+
+}
+
+.ratio_data_training{
+    width: 50px;
+}
+
+.ratio_data_testing {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.ratio_data label {
+    width: 100px;
+}
+
+.btn_form{
+    width: 500px;
+}
+
+.btn_form button{
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* Main */
+.main_content {
+    display: flex;
+    /* height: 100vh; */
+}
+
+.main_content_data_collection {
+    margin: 20px 20px 0px 20px ;
+    width: 100%;
+}
+
+.title_page {
+    color: #1D9BF0;
+}
+
+.page_explain {
+    margin-top: 10px;
+}
+
+.page_explain p {
+    color: #2d2d2d;
+}
+
+/* Components CSS */
+
+button {
+    background-color: #246d9d;
+    color: white;
+    padding: 8px;
+    border-radius: 5%;
+}
+
+.table_pages button {
+    background-color: #246d9d;
+    color: white;
+    margin-top: auto;
+}
+
+.table_data {
+    margin-top: 20px;
+}
+
+.table_data span {
+    font-weight: 600;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    color: #232323;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #999;
+    padding: 8px 20px;
+}
+
+.pages_inputcsv{
+    margin-top: 20px;
+    width: 150px;
+}
+
+.csv_table{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.validation_table_prepos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table_pages{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.span_current_page{
+    margin-top: auto;
+}
+
+.span_totalpages{
+    margin-top: auto;
+    margin-left: 15px;
+}
+
+/* Processing */
+
+.processing_file{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.processing_file span {
+    margin-top: 10px;
+    font-size: small;
+}
+
+.input_processing {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text_input_prepros{padding-top: 2px;}
+
+.text_input_prepros h3{
+    margin-bottom: 14px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.input_data {
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.input_data input {
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.select_hasil_banding {
+    display: flex;
+    margin-bottom: 9px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select_hasil_banding span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sisa_data {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_prepos {
+    margin-top: auto;
+}
+
+.input_processing button {
+    border-radius: 5px;
+}
+
+/* Validation */
+
+.data_uji {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.validation_table {
+    margin-top: 50px;
+}
+
+.next_and_prev_btn_container{
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.next_and_prev_btn_container button{
+    width: 80px;
+}
+
+.next_btn {
+   margin-right: 20px; 
+}
+
+.total_pages {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.full_table {
+    margin-top: 10px;
+}
+
+.form_processing{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.submit_processing{
+    margin-top: 20px;
+}
