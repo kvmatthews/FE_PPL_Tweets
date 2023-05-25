@@ -121,7 +121,6 @@ const App = () => {
     const uuid = uid();
     const newData = {
       accuracy: data.accuracy,
-      confusion_matrix: data.confusion_matrix,
       precision: data.precision,
       predictions: data.predictions,
       recall: data.recall,
@@ -222,7 +221,7 @@ const App = () => {
       setTestingData(response.data.training);
 
       setCurrentPagePros(1);
-
+      addData(response.data);
       setFormSubmitted(true);
       console.log(response.data.predictions);
     } catch (error) {

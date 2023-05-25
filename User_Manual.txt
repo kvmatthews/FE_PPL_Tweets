@@ -1,0 +1,82 @@
+USER MANUAL
+
+Pada Aplikasi Analisis Sentiemen ini user akan memasukan file CSV kemudian menekan tombol "Submit" untuk memulai preprocessing data. Setelah menjalani preprocessing data tersebut akan dipisahkan menjadi data training dan data testing dengan ratio 70:30, 80:20, dan 90:10 sesuai dengan inputan user. Data tersebut kemudian diproses dan akan menampilkan jumlah akurasi, presisi, dan recall pada menu validasi.
+
+<-------------------------------------------------------------------------->
+
+Bahasa Pemrograman yang dipakai :
+
+Python 3.11.3
+HTML
+CSS
+JAVASCRIPT
+
+<--------------------------------------->
+
+Database yang dipakai :
+
+Firebase
+
+<--------------------------------------->
+
+Library yang dipakai :
+
+- Front End:
+
+ReactJS
+React Router DOM
+Axios
+
+- Back End:
+
+Scikit-Learn
+NLTK (Natural Language Toolkit)
+Stop-Words
+Flask
+Flask-Cors
+Pandas
+Sastrawi
+Scikit-learn
+Matplotlib
+Urllib3
+
+<-------------------------------------------------------------------------->
+
+Instruksi penginstalan front end :
+
+npm init -y
+npm i --force
+npm install react-router-dom
+npm install firebase
+npm i axios
+npm install uid firebase
+
+CARA MENJALANKAN FRONT END :
+
+npm run start
+
+<-------------------------------------------------------------------------->
+
+Instruksi penginstalan backend :
+
+pip install scikit-learn
+pip install nltk
+pip install stop-words
+pip install flask
+pip install pandas
+pip install nltk
+pip install Sastrawi
+pip install scikit-learn
+pip install matplotlib
+pip install urllib3
+pip install flask-cors
+python get-pip.py
+python -m venv venv
+
+
+CARA MENJALANKAN BACKEND :
+
+& <system:>\<nama folder>\venv\Scripts\activate
+flask run
+
+<-------------------------------------------------------------------------->
